@@ -20,6 +20,8 @@ public class MainRealTimeReviewDaoImpl implements MainRealTimeReviewDao {
 
     @Override
     public List<MainRealTimeReviewVO> getReviewList(MainRealTimeReviewVO vo) {
+    	logger.info("값 테스트 1 ={}",vo.getFirstNum());
+    	logger.info("값 테스트 2 ={}",vo.getEndNum());
         logger.info("실시간후기 목록 가져오기 - sqlSession");
         return sqlSession.selectList("getReviewList", vo);
     }

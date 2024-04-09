@@ -154,7 +154,7 @@ $(document).ready(function() {
         <div class="pageingArea">
             <a href="#"><img src="././resources/img/pageLeftBtn.png" /></a>
             <c:forEach var="i" begin="1" end="${pageTotalCount}" step="1">
-                <a href="viewRealTimeReview.do?page=${i}">${i}</a>
+                <a href="realTimeReview.do?page=${i}">${i}</a>
             </c:forEach>
             <a href="#"><img src="././resources/img/pageRightBtn.png" /></a>
         </div>

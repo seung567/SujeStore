@@ -123,7 +123,7 @@ $(function(){
 				</table>
 				<div class="pageing">
 				<c:forEach var="i" begin="1" end="${totalCountRow }" step="1">
-					[<a href="customerReview.do?id=${id}&page=${i}">${i }</a>]
+					[<a href="getCustomerReview.do?id=${id}&page=${i}">${i }</a>]
 				</c:forEach>
 				</div>
 			</div>

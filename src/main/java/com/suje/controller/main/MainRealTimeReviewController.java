@@ -36,21 +36,21 @@ public class MainRealTimeReviewController {
 
     // 실시간 후기 조회 및 뷰로 전달
     @RequestMapping(value = "realTimeReview.do")
-    public String viewRealTimeReview(@RequestParam("page") int page, Model model) {
+    public String viewRealTimeReview(@RequestParam("page") int page, Model model,MainRealTimeReviewVO vo) {
         logger.info("실시간 후기 view 실행 컨트롤러");
+        logger.info("= {}",page);
         
         // 전체 레코드 수 가져오기
         totalRowCount = mainRealTimeReviewService.getTotalCountPage();
         
         // 전체 페이지 수 
         pageTotalCount = totalRowCount / countPerPage;
-        if (totalRowCount % countPerPage > 0) pageTotalCount++;
+        if (totalRowCount / countPerPage > 0) pageTotalCount++;
         
         // 부분 페이지 수 계산
         int firstNum = (page - 1) * countPerPage + 1;
         int endNum = page * countPerPage;
         
-        MainRealTimeReviewVO vo = new MainRealTimeReviewVO();
         vo.setFirstNum(firstNum);
         vo.setEndNum(endNum);
         
