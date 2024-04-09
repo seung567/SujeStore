@@ -4,23 +4,26 @@
 <mapper namespace="MainRealTimeReviewDao">
 
 <select id="getReviewList" resultType="realtimeVO" parameterType="map">
-	SELECT sub.*
-	FROM (  SELECT m.M_ID, m.M_NAME, m.M_EMAIL, 
-				   s.S_ID, s.S_NAME, s.S_EMAIL, s.S_SPNAME,
-				   oi.O_CODE, oi.O_CONTENT, oi.O_DATE,
-				   fo.FO_CODE, fo.FO_DATE, fo.FO_SUM, fo.FO_NUM, fo.FO_SIZE, fo.FO_ETC, fo.DELI_CODE,
-				   p.P_CODE, p.P_DATE, p.PT_CODE, p.P_SUM, p.P_CK, p.P_CK_DATE,
-				   r.RV_CODE, r.RV_CONTENT, r.RV_DATE, r.RV_LIKE, r.RV_STAR,
-				   rp.RVP_PSIZE, rp.RVP_PNAME, rp.RVP_SPNAME,
-				   ROW_NUMBER() OVER (ORDER BY r.RV_DATE DESC) AS rn
-			FROM member m
-				JOIN orderinfo oi ON m.M_ID = oi.M_ID
-				JOIN store s ON oi.S_ID = s.S_ID
-				JOIN final_order fo ON oi.O_CODE = fo.O_CODE
-				JOIN pay p ON fo.FO_CODE = p.FO_CODE
-				JOIN review r ON p.P_CODE = r.P_CODE
-				JOIN review_photo rp ON r.RV_CODE = rp.RV_CODE) sub
-	WHERE sub.rn BETWEEN #{firstNum} AND #{endNum}
+<![CDATA[
+select fo_code, m_id, s_spname, s_name, s_id, rv_star, rv_code, rv_like, rv_content, rvp_spname, rv_date 
+from
+	(select 
+		rownum r_num, fo_code, m_id, s_spname, s_name, s_id, rv_star, rv_code, rv_like, rv_content, rvp_spname, rv_date 
+	from 
+		(select 
+			fo.fo_code, oi.m_id, st.s_spname, st.s_name, st.s_id, rv.rv_star, rv.rv_code, rv.rv_like, rv.rv_content, rvp.rvp_spname, rv.rv_date  
+		from 
+			review_photo rvp, review rv, pay p, final_order fo, orderinfo oi, store st 
+		where 
+			oi.o_code = fo.o_code 
+			and oi.s_id = st.s_id 
+			and fo.fo_code = p.fo_code 
+			and p.p_code = rv.p_code 
+			and rv.rv_code = rvp.rv_code 
+			order by rv_date desc)) 
+where 
+	r_num >= #{firstNum} and r_num <= #{endNum}
+	]]>
 </select>
 
 <select id="getTotalCountPage" resultType="int">
