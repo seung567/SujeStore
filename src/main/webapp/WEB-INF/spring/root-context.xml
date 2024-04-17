@@ -11,9 +11,9 @@
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
-		<property value="jdbc:oracle:thin:@192.168.0.93:1521:suje" name="url"/>
-		<property name="username" value="suje"/>
-		<property name="password" value="game"/>
+		<property value="jdbc:oracle:thin:@ <!-- DB 접속 경로 --> " name="url"/>
+		<property name="username" value="<!-- DB 아이디 -->"/>
+		<property name="password" value="<!-- DB 패스워드 -->"/>
 	</bean> 
 	
 	
