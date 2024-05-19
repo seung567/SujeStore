@@ -1,9 +1,9 @@
 ## 프로젝트 개요
-기간 : 2024.03.18 ~ 2024.04.12
-인원 : 유승민(팀장), 최수빈, 장경희, 김동현, 이수정, 이정석
-내용 : Spring MVC 와 Mybatis를 이용한 웹서비스 개발 프로젝트
-개발 환경 : Java, Spring MVC, Oracle DB (SQL, PL/SQL), Apache Tomcat
-
+기간 : 2024.03.18 ~ 2024.04.12 <br/>
+인원 : 유승민(팀장), 최수빈, 장경희, 김동현, 이수정, 이정석 <br/>
+내용 : Spring MVC 와 Mybatis를 이용한 웹서비스 개발 프로젝트 <br/>
+개발 환경 : Java, Spring MVC, Oracle DB (SQL, PL/SQL), Apache Tomcat <br/>
+<br/>
 개발동기 : 
 1. 개발 동기 
 2. 개인 소비자가 맞춤 주문을 할 때, 다양한 업체 정보가 분산돼 있어 찾는 데 시간이 낭비됩니다.
