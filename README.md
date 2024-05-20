@@ -1,11 +1,12 @@
-http://sujeonestore.com:8085/
 
 ## 프로젝트 개요
 기간 : 2024.03.18 ~ 2024.04.12 <br/>
 인원 : 유승민(팀장), 최수빈, 장경희, 김동현, 이수정, 이정석 <br/>
 내용 : Spring MVC 와 Mybatis를 이용한 웹서비스 개발 프로젝트 <br/>
 개발 환경 : Java, Spring MVC, Oracle DB (SQL, PL/SQL), Apache Tomcat <br/>
-개발동기 : 
+시연 영상 : https://www.youtube.com/watch?v=Nr9y0v2HDB8
+
+<h3>개발동기</h3>
 1. 개발 동기 
 2. 개인 소비자가 맞춤 주문을 할 때, 다양한 업체 정보가 분산돼 있어 찾는 데 시간이 낭비됩니다.
 3. 온라인 주문 경험이 없는 소비자가 주문을 할 때, 신뢰할 수 있는 업체 정보와 투명한 후기가 부족해 불편을 겪을 수 있습니다.
