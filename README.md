@@ -4,7 +4,7 @@
 인원 : 유승민(팀장), 최수빈, 장경희, 김동현, 이수정, 이정석 <br/>
 내용 : Spring MVC 와 Mybatis를 이용한 웹서비스 개발 프로젝트 <br/>
 개발 환경 : Java, Spring MVC, Oracle DB (SQL, PL/SQL), Apache Tomcat <br/>
-시연 영상 : https://www.youtube.com/watch?v=Nr9y0v2HDB8
+시연 영상 : https://www.youtube.com/watch?v=Nr9y0v2HDB8 <br/>
 프로젝트PPT : https://github.com/seung567/SujeStore/blob/main/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_Suje%EC%8A%A4%ED%86%A0%EC%96%B4_Spring%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8.pdf
 
 <h3>개발동기</h3>
