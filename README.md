@@ -21,9 +21,3 @@
   <li>"org.springsource.ide.eclipse.commons.content.core" 에 압축해제된 폴더에 있는 xml 파일 넣기</li>
   <li>폴더가 없을 경우 위 폴더 이름대로 생성 후 xml 파일 넣기</li>
 </ul>
-
-<h2>주요 변경사항</h2>
-<h4>2024-03-22 원본 Spring MVC Project 업로드 - 유승민</h4>
-<h4>2024-03-23 Spring MVC xml 매핑 작업 및 상세파일 수정 - 유승민</h4>
-<h4>2024-03-25 View 작업시작 // 깃허브 파일 공유 - 유승민</h4>
-<h4>2024-04-01 Back-End 작업시작 - 유승민</h4>
