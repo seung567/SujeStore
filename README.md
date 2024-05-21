@@ -5,7 +5,7 @@
 3. 내용 : Spring MVC 와 Mybatis를 이용한 웹서비스 개발 프로젝트
 4. 개발 환경 : Java, Spring MVC, Oracle DB (SQL, PL/SQL), Apache Tomcat
 5. 시연 영상 : https://www.youtube.com/watch?v=Nr9y0v2HDB8
-<!-- 6. URL : http://sujeonestore.com:8085/ -->
+6. URL : http://sujeonestore.com/suje/
 
 프로젝트PPT : https://github.com/seung567/SujeStore/blob/main/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_Suje%EC%8A%A4%ED%86%A0%EC%96%B4_Spring%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8.pdf
 
